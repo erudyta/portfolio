@@ -1,0 +1,78 @@
+
+.home-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.home-container {
+	height: 100vh;
+	padding-top: 10rem;
+}
+
+.home-social {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-size: 2rem;
+}
+
+.social-icon {
+	align-self: start;
+	padding: 0px 5px;
+	transition: color 0.4s, text-shadow 0.4s;
+}
+
+.social-icon:hover {
+	color: var(--secondary-color);
+	text-shadow: 0 0 3px var(--secondary-color);
+}
+
+.home-description {
+	grid-column: 1/3;
+	grid-row: 2/3;
+	line-height: 2;
+}
+
+.underline {
+	height: 3px;
+	width: 70px;
+	margin: 10px 0;
+	background-color: var(--secondary-color);
+}
+
+.home-photo {
+	height: 200px;
+	width: 200px;
+	background-color: var(--secondary-color);
+	border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+}
+
+.home-blob-photo {
+	background-image: url('../../assets/kp.png');
+	background-size: cover;
+	background-position: 50% 30%;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+	/* animation: blob-animation 4s ease-in infinite; */
+	z-index: 1;
+}
+
+.home-buttons {
+	position: relative;
+	margin-top: 10px;
+	font-weight: var(--font-semibold);
+}
+
+.home-buttons i {
+	display: inline;
+	text-align: center;
+}
+
+.home-buttons a{
+	transition: color 0.4s;
+}
+
+.home-buttons a:hover {
+	color: var(--secondary-color);
+}

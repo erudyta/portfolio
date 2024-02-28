@@ -11,7 +11,7 @@
 	--text-color: rgb(82, 89, 100);
 	--body-color: rgb(240, 240, 240);
 	--container-color: rgb(255, 255, 255);
-	--secondary-color: rgb(255,118,108);
+	--secondary-color: rgb(255, 118, 108);
 
 	/* ================ Font Size ==============  */
 	/* 0.5 rem = 8px | 1 rem = 16px | 1.5 rem = 24px | 2 rem = 36px */
@@ -68,6 +68,18 @@ h3 {
 	line-height: 1.3;
 }
 
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+}
+
 ul {
 	list-style: none;
 }
@@ -83,14 +95,17 @@ button {
 	cursor: none;
 }
 
+p {
+	text-align: justify;
+}
+
 /* ============================ CSS ============================ */
 .container {
 	margin: 0 auto;
-	padding: 0 20px;
+	margin: 0 1rem;
 	max-width: 1200px;
 }
 
 .section {
 	padding-top: 6rem;
-	padding-bottom: 2rem;
 }

@@ -1,8 +1,8 @@
-import './header.css'
 import { navbarData } from '../../js/navbarData.js'
 
 import { useState } from 'react'
 
+import './header.css'
 export default function Header() {
 	const [activeNav, setActiveNav] = useState({
 		home: false,

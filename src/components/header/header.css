@@ -4,17 +4,17 @@ header {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	top: 25px;
+	top: 30px;
 	line-height: 1.5;
 }
 
 .nav {
 	position: relative;
 	display: flex;
+	height: 60px;
+	padding: 10px;
 	background-color: var(--container-color);
 	border-radius: 10px;
-	padding: 10px;
-	height: 60px;
 }
 
 .nav ul {
@@ -77,11 +77,11 @@ header {
 }
 
 .nav li.active:nth-child(1) ~ .nav-circle {
-	transform: translateX(calc(-1px));
+	transform: translateX(calc(-2px));
 }
 
 .nav li.active:nth-child(2) ~ .nav-circle {
-	transform: translateX(calc(60px));
+	transform: translateX(calc(61px));
 }
 
 .nav li.active:nth-child(3) ~ .nav-circle {
@@ -105,7 +105,7 @@ header {
 	}
 
 	.nav li.active:nth-child(1) ~ .nav-circle {
-		transform: translateX(calc(-6px));
+		transform: translateX(calc(-7px));
 	}
 
 	.nav li.active:nth-child(2) ~ .nav-circle {

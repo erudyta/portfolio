@@ -24,12 +24,12 @@ export default function About() {
 								))}
 							</div>
 							<div className='lng-text'>
-								<a className='lng-course' href=''>
+								<a className='lng-course' href={path.link} target='_blank'>
 									{path.description}
 								</a>
 							</div>
 							<div className='lng-bar-container'>
-								<div className='lng-bar'>
+								<div data-percentage={path.completedPercentage} className='lng-bar'>
 									<Bar percentage={path.completedPercentage} />
 								</div>
 							</div>

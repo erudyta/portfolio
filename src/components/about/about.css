@@ -36,9 +36,9 @@
 	align-items: center;
 	height: 13px;
 	width: 13px;
-	color: black;
+	color: var(--text-color);
 	border-radius: 50%;
-	border: 1px solid black;
+	border: 1px solid var(--text-color);
 	background-color: rgb(255, 255, 255);
 	font-size: 10px;
 }
@@ -69,15 +69,25 @@
 }
 
 .lng-bar-container {
-	margin-top: 40px;
-	padding: 0 20px 0 0;
+	margin-top: 25px;
 }
 
 .lng-bar {
+	position: relative;
 	background-color: rgb(172, 220, 252);
-	border-radius: 4px 0 0 4px;
+	border-radius: 4px;
+}
+
+.lng-bar::before {
+	content: attr(data-percentage);
+	position: absolute;
+	top: -21px;
+	left: 50%;
+	color: var(--secondary-color);
+	font-size: var(--smaller-font-size);
+	transform: translate(-50%, 0);
 }
 
 .lng-method:nth-child(3) .lng-bar-container {
-	margin-top: 73px;
+	margin-top: 58px;
 }

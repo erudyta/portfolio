@@ -1,11 +1,10 @@
-
 .home-content {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 }
 .home-container {
 	height: 100vh;
-	padding-top: 10rem;
+	padding-top: 8rem;
 }
 
 .home-social {
@@ -32,11 +31,8 @@
 	line-height: 2;
 }
 
-.underline {
-	height: 3px;
-	width: 70px;
+.home .underline {
 	margin: 10px 0;
-	background-color: var(--secondary-color);
 }
 
 .home-photo {
@@ -69,7 +65,7 @@
 	text-align: center;
 }
 
-.home-buttons a{
+.home-buttons a {
 	transition: color 0.4s;
 }
 

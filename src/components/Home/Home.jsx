@@ -3,7 +3,7 @@ import RenderingText from '../RenderingText.jsx'
 import './home.css'
 export default function Home() {
 	return (
-		<section className='home'>
+		<section id='home' className='home'>
 			<div className='container home-container'>
 				<div className='home-content'>
 					<div className='home-social'>
@@ -26,7 +26,7 @@ export default function Home() {
 						<h3>
 							<RenderingText
 								words={['Coder', 'React Developer', 'Frontend Developer']}
-								style={{ color: 'rgb(255, 118, 108)', textTransform: 'uppercase' }}
+								style={{ color: 'rgb(93, 186, 252)', textTransform: 'uppercase' }}
 							/>
 						</h3>
 						<div className='underline'></div>

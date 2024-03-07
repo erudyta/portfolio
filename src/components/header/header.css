@@ -14,7 +14,7 @@ header {
 	display: flex;
 	height: 60px;
 	padding: 10px;
-	background-color: var(--container-color);
+	background-color: var(--navbar-color);
 	border-radius: 10px;
 }
 

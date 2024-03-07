@@ -1,0 +1,38 @@
+.skills-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px 20px;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 9px;
+}
+
+.skill-icon {
+	position: relative;
+	top: 10px;
+	font-size: 40px;
+	transition: color 0.4s;
+}
+
+.skill-text {
+	position: relative;
+	font-size: var(--smaller-font-size);
+	transform: translateY(-10px);
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.skill:hover .skill-text {
+	opacity: 1;
+	transform: translateY(10px);
+}
+
+.skill:hover .skill-icon {
+	color: var(--secondary-color);
+}

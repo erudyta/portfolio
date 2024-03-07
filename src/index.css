@@ -12,11 +12,12 @@
 	--body-color: rgb(240, 240, 240);
 	--container-color: rgb(255, 255, 255);
 	--secondary-color: rgb(93, 186, 252);
+	--navbar-color: rgb(206, 206, 206);
 
 	/* ================ Font Size ==============  */
 	/* 0.5 rem = 8px | 1 rem = 16px | 1.5 rem = 24px | 2 rem = 36px */
 	--body-font: 'Montserrat', sans-serif;
-	--h1-font-size: 2rem;
+	--h1-font-size: 2.25rem;
 	--h2-font-size: 1.5rem;
 	--h3-font-size: 1.25rem;
 	--normal-font-size: 1rem;
@@ -32,8 +33,8 @@
 @media (max-width: 1024px) {
 	:root {
 		--h1-font-size: 1.75rem;
-		--h2-font-size: 1.25rem;
-		--h3-font-size: 1rem;
+		--h2-font-size: 1.35rem;
+		--h3-font-size: 1.1rem;
 		--normal-font-size: 0.938rem;
 		--small-font-size: 0.81rem;
 		--smaller-font-size: 0.75rem;
@@ -93,7 +94,7 @@ a {
 button {
 	cursor: pointer;
 	border: none;
-	cursor: none;
+	outline: none;
 }
 
 p {
@@ -108,7 +109,7 @@ p {
 }
 
 .section {
-	padding-top: 6rem;
+	margin-top: 6rem;
 }
 
 .underline {

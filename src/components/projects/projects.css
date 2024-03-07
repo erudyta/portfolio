@@ -1,0 +1,68 @@
+.project-blur {
+	filter: blur(2.1px);
+}
+
+.project-photo-blur {
+	filter: blur(3.5px);
+}
+
+.projects-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+.project {
+	background-color: var(--container-color);
+	border-radius: 10px;
+}
+
+.project-desc {
+	position: relative;
+}
+
+.project h3 {
+	margin: 15px 0;
+}
+
+.project-subtitle {
+	position: absolute;
+	top: 17px;
+	color: red;
+	font-size: var(--small-font-size);
+	font-style: italic;
+}
+
+.projects-container img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	object-fit: contain;
+}
+
+.project-techs {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	row-gap: 4px;
+	font-size: var(--smaller-font-size);
+}
+
+.project-techs span {
+	display: inline-block;
+	color: var(--secondary-color);
+	border: 2px solid var(--secondary-color);
+	font-weight: 600;
+	margin-right: 2px;
+	border-radius: 10px;
+	padding: 0px 5px;
+}
+
+.project-content {
+	padding: 0 10px 10px;
+}
+
+.project-btns {
+	margin-top: 16px;
+	margin-bottom: 10px;
+}

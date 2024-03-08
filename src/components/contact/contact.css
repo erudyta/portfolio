@@ -1,0 +1,15 @@
+.contact-info {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.contact-info i {
+	font-size: 35px;
+}
+
+.contact-mth{
+    font-weight: var(--font-semibold);
+}

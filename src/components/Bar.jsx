@@ -5,7 +5,7 @@ const StyledBar = styled.div`
 	height: 7px;
 	width: ${props => props.$percentage};
 	border-radius: 4px;
-	background-color: rgba(93, 186, 252);
+	background-color: rgb(81, 150, 199);
 
 `
 

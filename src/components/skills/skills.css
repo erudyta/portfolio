@@ -1,7 +1,14 @@
+.skills{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .skills-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px 20px;
+	justify-items: center;
 }
 
 .skill {
@@ -9,6 +16,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 120px;
 	padding: 10px;
 	border-radius: 9px;
 }
@@ -35,4 +43,11 @@
 
 .skill:hover .skill-icon {
 	color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+	.skills-container {
+		grid-template-columns: min-content min-content min-content;
+		gap: 25px 45px;
+	}
 }

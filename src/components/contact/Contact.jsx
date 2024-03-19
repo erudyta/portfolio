@@ -1,9 +1,10 @@
+import { forwardRef } from 'react'
 import { contactMethods } from '../../js/contactData.js'
 
 import './contact.css'
-export default function Contact() {
+const Contact = forwardRef(function Contact({}, ref) {
 	return (
-		<section id='contact' className='contact section'>
+		<section ref={ref} id='contact' className='contact section'>
 			<h1 className='center-text'>Contact</h1>
 			<div className='underline'></div>
 			<div className='container'>
@@ -21,4 +22,6 @@ export default function Contact() {
 			</div>
 		</section>
 	)
-}
+})
+
+export default Contact

@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 const StyledA = styled.a`
 	display: inline-block;
-	padding: 5px 15px;
+	padding: 5px 10px;
 	color: white;
 	background-color: black;
 	border-radius: 20px;

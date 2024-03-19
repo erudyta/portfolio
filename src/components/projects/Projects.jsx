@@ -1,3 +1,5 @@
+import { forwardRef } from 'react'
+
 import { projects } from '../../js/projectsData.js'
 
 import AButton from '../AButton.jsx'
@@ -24,9 +26,9 @@ const images = [
 const aIcon = 'bx bx-chevron-right'
 
 import './projects.css'
-export default function Projects() {
+const Projects = forwardRef(function Projects({}, ref) {
 	return (
-		<section id='projects' className='projects section'>
+		<section ref={ref} id='projects' className='projects section'>
 			<h1 className='center-text'>Projects</h1>
 			<div className='underline'></div>
 			<div className='container'>
@@ -64,4 +66,6 @@ export default function Projects() {
 			</div>
 		</section>
 	)
-}
+})
+
+export default Projects

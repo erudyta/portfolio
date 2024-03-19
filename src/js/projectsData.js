@@ -14,7 +14,6 @@ export const projects= [
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, facere!',
         liveDemoLink : '#',
         gitHubLink: '#',
-        blur: true
     },
     {
         title: 'Todo App',

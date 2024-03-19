@@ -1,9 +1,10 @@
+import { forwardRef } from 'react'
 import { skills } from '../../js/skillsData.js'
 
 import './skills.css'
-export default function Skills() {
+const Skills = forwardRef(function Skills({}, ref) {
 	return (
-		<section id='skills' className='skills section'>
+		<section ref={ref} id='skills' className='skills section'>
 			<h1 className='center-text'>Skills</h1>
 			<div className='underline'></div>
 			<div className='container skills-container'>
@@ -17,4 +18,6 @@ export default function Skills() {
 			</div>
 		</section>
 	)
-}
+})
+
+export default Skills

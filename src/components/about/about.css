@@ -78,6 +78,11 @@
 	font-weight: 600;
 	line-height: 1.1;
 	text-align: center;
+	transition: color .4s;
+}
+
+.lng-course:hover {
+	color: var(--secondary-color)
 }
 
 .lng-logos {

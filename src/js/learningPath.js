@@ -41,4 +41,11 @@ export const learningPath = [
 		link: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
 		completedPercentage: '40%',
 	},
+	{
+		iconsImg: ['https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg'],
+		imgAlt: ['TypeScript logo'],
+		description: 'Understanding TypeScript',
+		link: 'https://www.udemy.com/course/understanding-typescript/',
+		completedPercentage: '70%',
+	},
 ]

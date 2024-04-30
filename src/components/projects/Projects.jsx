@@ -4,13 +4,13 @@ import { projects } from '../../js/projectsData.js'
 
 import AButton from '../AButton.jsx'
 
-import personalWebV1Img from '../../assets/personalWebv1.png'
+import calculatorJS from '../../assets/Vanilla_JS_Calculator.png'
 import ticTacToeImage from '../../assets/tic-tac-toe.png'
 import toDoAppImg from '../../assets/todo-app.png'
 
 const images = [
 	{
-		source: personalWebV1Img,
+		source: calculatorJS,
 		alt: 'Personal website',
 	},
 	{

@@ -28,7 +28,7 @@
 
 .project-subtitle {
 	position: absolute;
-	top: 17px;
+	top: 21px;
 	color: red;
 	font-size: var(--small-font-size);
 	font-style: italic;
@@ -83,12 +83,23 @@
 	}
 
 	.projects-container img {
-		height: 190px;
+		height: 180px;
 	}
+	.project-btns {
+		display: flex;
+		flex-direction: column;
+		width: max-content;
+		gap: 5px;
+	}
+	
 }
 
 @media (min-width: 992px) {
 	.projects-container img {
-		height: 220px;
+		height: 180px;
+	}
+
+	.project-btns {
+		display: inline-block;
 	}
 }

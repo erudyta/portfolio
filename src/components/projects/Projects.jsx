@@ -5,8 +5,8 @@ import { projects } from '../../js/projectsData.js'
 import AButton from '../AButton.jsx'
 
 import calculatorJS from '../../assets/Vanilla_JS_Calculator.png'
-import ticTacToeImage from '../../assets/tic-tac-toe.png'
-import toDoAppImg from '../../assets/todo-app.png'
+import ticTacToeImg from '../../assets/tic-tac-toe.png'
+import dayPlannerImg from '../../assets/day-planner.png'
 
 const images = [
 	{
@@ -14,12 +14,12 @@ const images = [
 		alt: 'Personal website',
 	},
 	{
-		source: ticTacToeImage,
+		source: ticTacToeImg,
 		alt: 'Tic Tac Toe game',
 	},
 	{
-		source: toDoAppImg,
-		alt: 'To do app',
+		source: dayPlannerImg,
+		alt: 'Planner Day app',
 	},
 ]
 

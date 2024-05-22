@@ -7,6 +7,6 @@ export const contactMethods =[
     {
         icon: 'bx bx-mobile-alt',
         method: 'Phone',
-        data: '+48 123 456 789'
+        data: '+48 725 473 368'
     }
 ]

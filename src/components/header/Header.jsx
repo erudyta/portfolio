@@ -1,11 +1,11 @@
-import { navbarData } from '../../js/navbarData.js'
+import { navbarData } from '../../js/navbar-data.js'
 
 import { useEffect, useState } from 'react'
 
 import './header.css'
 export default function Header({ sectionRefs }) {
 	const [activeNav, setActiveNav] = useState({
-		home: false,
+		home: true,
 		about: false,
 		skills: false,
 		projects: false,
@@ -27,6 +27,8 @@ export default function Header({ sectionRefs }) {
 
 	function changeActiveNav() {
 		let scrollY = window.scrollY
+		const scrolledTo = window.scrollY + window.innerHeight;
+		const isReachBottom = document.body.scrollHeight === scrolledTo;
 		if (
 			scrollY >= sectionRefs.home.current.offsetTop &&
 			scrollY < sectionRefs.home.current.offsetTop - 90 + sectionRefs.home.current.offsetHeight
@@ -42,22 +44,23 @@ export default function Header({ sectionRefs }) {
 			scrollY < sectionRefs.skills.current.offsetTop - 90 + sectionRefs.skills.current.offsetHeight
 		) {
 			handleActiveNav('skills')
-		} else if (
+		}  else if (
+			(scrollY >= sectionRefs.contact.current.offsetTop - 90 &&
+			scrollY < sectionRefs.contact.current.offsetTop - 90 + sectionRefs.contact.current.offsetHeight) || isReachBottom
+		) {
+			handleActiveNav('contact')
+		}
+		 else if (
 			scrollY >= sectionRefs.project.current.offsetTop - 90 &&
 			scrollY < sectionRefs.project.current.offsetTop - 90 + sectionRefs.project.current.offsetHeight
 		) {
 			handleActiveNav('projects')
-		} else if (
-			scrollY >= sectionRefs.contact.current.offsetTop - 90 &&
-			scrollY < sectionRefs.contact.current.offsetTop - 90 + sectionRefs.contact.current.offsetHeight
-		) {
-			handleActiveNav('contact')
 		}
 	}
 
 	useEffect(() => {
 		window.addEventListener('scrollend', changeActiveNav)
-		return () => window.removeEventListener('scroll', changeActiveNav)
+		return () => window.removeEventListener('scrollend', changeActiveNav)
 	}, [activeNav])
 
 	return (

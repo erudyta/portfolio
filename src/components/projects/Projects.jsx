@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 
-import { projects } from '../../js/projectsData.js'
+import { projects } from '../../js/projects-data.js'
 
 import AButton from '../AButton.jsx'
 

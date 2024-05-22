@@ -1,5 +1,5 @@
 import { useState, forwardRef, useEffect } from 'react'
-import { learningPath } from '../../js/learningPath.js'
+import { learningPath } from '../../js/learning-path.js'
 import Bar from '../Bar.jsx'
 
 import './about.css'

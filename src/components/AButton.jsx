@@ -7,6 +7,7 @@ const StyledA = styled.a`
 	border-radius: 20px;
 	margin-right: 5px;
     pointer-events: ${props => props.$disable ? 'none' : 'auto'};
+	transition: background-color .4s;
 	& i {
 		display: inline;
 		text-align: center;
@@ -14,6 +15,9 @@ const StyledA = styled.a`
 
 	.styledADsiable {
 		color: red;
+	}
+	&:hover {
+		background-color: rgb(81, 150, 199);
 	}
 `
 export default function AButton({ children, link, icon, disable }) {

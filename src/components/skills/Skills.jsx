@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { skills } from '../../js/skillsData.js'
+import { skills } from '../../js/skills-data.js'
 
 import './skills.css'
 const Skills = forwardRef(function Skills({}, ref) {

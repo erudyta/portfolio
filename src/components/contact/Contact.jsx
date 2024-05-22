@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { contactMethods } from '../../js/contactData.js'
+import { contactMethods } from '../../js/contact-data.js'
 
 import './contact.css'
 const Contact = forwardRef(function Contact({}, ref) {

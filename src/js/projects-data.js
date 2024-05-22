@@ -10,7 +10,7 @@ export const projects= [
     {
         title: 'Tic Tac Toe Game',
         subtitle: '',
-        technologies: ['HTML', 'CSS', 'React', 'Tailwind'],
+        technologies: ['HTML', 'Tailwind', 'React', 'JavaScript'],
         description: 'Tic-Tac-Toe game created using the above-mentioned technologies.',
         liveDemoLink : 'https://erudyta.github.io/react-tic-tac-toe-game',
         gitHubLink: 'https://github.com/erudyta/react-tic-tac-toe-game',

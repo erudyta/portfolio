@@ -2,8 +2,8 @@ export const projects= [
     {
         title: 'Calculator',
         subtitle: '',
-        technologies: ['HTML', 'CSS', 'Vanilla JavaScript'],
-        description: 'Simple calculator in HTML, CSS and JavaScript.',
+        technologies: ['HTML', 'SCSS', 'Vanilla JavaScript'],
+        description: 'Simple calculator in HTML, SCSS and JavaScript.',
         liveDemoLink : 'https://erudyta.github.io/JS-Calculator/',
         gitHubLink: 'https://github.com/erudyta/JS-Calculator',
     },

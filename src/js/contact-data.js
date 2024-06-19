@@ -2,7 +2,7 @@ export const contactMethods =[
     {
         icon: 'bx bx-envelope',
         method: 'Email',
-        data: 'kamilpyszniak@outlook.com'
+        data: 'x.pyszniak@gmail.com'
     },
     {
         icon: 'bx bx-mobile-alt',

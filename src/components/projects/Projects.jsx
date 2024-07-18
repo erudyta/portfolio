@@ -7,6 +7,7 @@ import AButton from '../AButton.jsx'
 import calculatorJS from '../../assets/Vanilla_JS_Calculator.png'
 import ticTacToeImg from '../../assets/tic-tac-toe.png'
 import dayPlannerImg from '../../assets/day-planner.png'
+import jobPortalImg from '../../assets/job_portal.png'
 
 const images = [
 	{
@@ -21,6 +22,11 @@ const images = [
 		source: dayPlannerImg,
 		alt: 'Planner Day app',
 	},
+	{
+		source: jobPortalImg,
+		alt: 'Job Portal app',
+	},
+
 ]
 
 const aIcon = 'bx bx-chevron-right'

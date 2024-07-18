@@ -46,7 +46,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	column-gap: 5px;
 	row-gap: 4px;
 	font-size: var(--smaller-font-size);
 }

@@ -23,4 +23,12 @@ export const projects= [
         liveDemoLink : 'https://erudyta.github.io/react-day-planner',
         gitHubLink: 'https://github.com/erudyta/react-day-planner',
     },
+    {
+        title: 'Job Portal',
+        subtitle: '',
+        technologies: ['React', 'Redux', 'React Router', 'CSS Modules' ,'Jest', 'React Testing Library',],
+        description: 'The job portal allows you to search for an offer using keywords, select the appropriate IT language in the navigation or add a job offer to your favorites.',
+        liveDemoLink : 'https://erudyta.github.io/react-job-offers/',
+        gitHubLink: 'https://github.com/erudyta/react-job-offers',
+    },
 ]

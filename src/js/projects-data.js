@@ -16,12 +16,12 @@ export const projects= [
         gitHubLink: 'https://github.com/erudyta/react-tic-tac-toe-game',
     },
     {
-        title: 'Day Planner',
+        title: 'Calendar App',
         subtitle: '',
-        technologies: ['HTML', 'CSS', 'React'],
-        description: 'Day Planner is an application that helps you plan your day. The first step is to create a day and then select the time at which you want to do something with a description.',
-        liveDemoLink : 'https://erudyta.github.io/react-day-planner',
-        gitHubLink: 'https://github.com/erudyta/react-day-planner',
+        technologies: ['HTML', 'CSS', "JavaScript", 'React'],
+        description: 'The calendar application allows you to save scheduled activities for a specific day. When you click on a selected day in the calendar, a list of events falling on that day will be displayed. If a given day has no events created there is an option to create an event by clicking the appropriate button. The created event can be deleted and its content can be freely modified.',
+        liveDemoLink : 'https://erudyta.github.io/react-calendar-app/',
+        gitHubLink: 'https://github.com/erudyta/react-calendar-app',
     },
     {
         title: 'Job Portal',

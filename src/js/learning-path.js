@@ -39,7 +39,7 @@ export const learningPath = [
 		imgAlt: ['React logo'],
 		description: 'React - The Complete Guide',
 		link: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
-		completedPercentage: '50%',
+		completedPercentage: '65%',
 	},
 	{
 		iconsImg: ['https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg'],

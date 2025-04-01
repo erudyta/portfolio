@@ -16,6 +16,10 @@ export const skills = [
         icon: 'bx bxl-javascript'
     },
     {
+        name: 'TypeScript',
+        icon: 'bx bxl-typescript'
+    },
+    {
         name: 'React',
         icon: 'bx bxl-react'
     },

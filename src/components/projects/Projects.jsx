@@ -1,22 +1,19 @@
 import { forwardRef } from 'react'
 
 import { projects } from '../../js/projects-data.js'
+import { useEffect } from 'react'
 
 import AButton from '../AButton.jsx'
 
-import calculatorJS from '../../assets/Vanilla_JS_Calculator.png'
+import dictionary from '../../assets/Dictionary_lightMode.png'
 import ticTacToeImg from '../../assets/tic-tac-toe.png'
 import calendarAppImg from '../../assets/calendar-app.png'
 import jobPortalImg from '../../assets/job_portal.png'
 
 const images = [
 	{
-		source: calculatorJS,
+		source: dictionary,
 		alt: 'Personal website',
-	},
-	{
-		source: ticTacToeImg,
-		alt: 'Tic Tac Toe game',
 	},
 	{
 		source: calendarAppImg,
@@ -26,13 +23,38 @@ const images = [
 		source: jobPortalImg,
 		alt: 'Job Portal app',
 	},
-
+	{
+		source: ticTacToeImg,
+		alt: 'Tic Tac Toe game',
+	},
 ]
 
 const aIcon = 'bx bx-chevron-right'
 
 import './projects.css'
 const Projects = forwardRef(function Projects({}, ref) {
+	const adjustTechsHeight = () => {
+		const techsElements = document.querySelectorAll('.project-techs');
+		let maxHeight = 0;
+	
+		techsElements.forEach(el => {
+			maxHeight = Math.max(maxHeight, el.getBoundingClientRect().height);
+		});
+	
+		techsElements.forEach(el => {
+			el.style.minHeight = `${maxHeight}px`; // Ustawiamy min-height zamiast height
+		});
+	};
+	
+	useEffect(() => {
+		adjustTechsHeight(); // Uruchom na start
+		window.addEventListener('resize', adjustTechsHeight);
+	
+		return () => {
+			window.removeEventListener('resize', adjustTechsHeight);
+		};
+	}, []);
+
 	return (
 		<section ref={ref} id='projects' className='projects section'>
 			<h1 className='center-text'>Projects</h1>
